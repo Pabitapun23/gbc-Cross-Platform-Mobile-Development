@@ -46,17 +46,7 @@ export default function GeolocationScreen() {
 
                 // 2. if permission granted, then get the location
                 .then((location) => {
-                    console.log(`Location: ${JSON.stringify(location)}`);
-                    console.log(`Lat: ${location.coords.latitude}`);
-                    console.log(`Lng: ${location.coords.longitude}`);
-
-                    // 3. do something with the retreived location
-                    const coords = {
-                        latitude: location.coords.latitude,
-                        longitude: location.coords.longitude,
-                    };
-
-                    setDeviceLocation(coords);
+                    c
                 });
         } catch (err) {
             console.log(err);

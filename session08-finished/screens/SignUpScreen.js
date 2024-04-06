@@ -65,8 +65,6 @@ const SignUpScreen = () => {
         setFormFieldData(temp)
         
     }
-
-
     
 
     return(

@@ -1,4 +1,3 @@
-
 import { useState, useRef } from "react";
 import { View, Text, StyleSheet, Dimensions, Button } from "react-native";
 import * as Location from "expo-location";
@@ -46,7 +45,7 @@ const MapScreen = () => {
         <Text>Map Screen</Text>
 
         <MapView
-          style= {{width: Dimensions.get('window').width, height: 500}}
+          style= {{width: '100%', height: 500}}
           initialRegion={currRegion}
           onRegionChangeComplete={mapMoved}
           ref={mapRef}
